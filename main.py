@@ -10,6 +10,7 @@ books = import_data()
 class BookModel(BaseModel):
     title: str
     author: str
+
 app = FastAPI()
 
 @app.get("/")

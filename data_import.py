@@ -10,7 +10,6 @@ def import_data():
         author = row['Author']
         book_title = row['Book Title']
         book = Book(book_title, author)
-
         dict_books = add_book_to_dict(dict_books, book)
     return dict_books
 
