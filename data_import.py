@@ -3,7 +3,7 @@ import pandas as pd
 from domain import Book
 
 def import_data():
-    path = "data/books_v2.csv"
+    path = input("Enter path to csv file: ").strip()
     books = pd.read_csv(path, delimiter=';')
     dict_books = dict()
     for index, row in books.iterrows():
