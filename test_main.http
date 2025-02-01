@@ -2,8 +2,28 @@
 
 GET http://127.0.0.1:8000/
 Accept: application/json
+
 ###
 
-GET http://127.0.0.1:8000/hello/User
+GET http://127.0.0.1:8000/books
 Accept: application/json
+
+###
+GET http://127.0.0.1:8000/authors/report
+Accept: application/json
+
+###
+GET http://127.0.0.1:8000/authors/report?sorted_by_absolute_count=false
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/books
+Content-Type: application/json
+
+{
+  "title": "MA2 Skripta",
+  "author": "Tomas Kalvoda"
+}
+
+
 ###

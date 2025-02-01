@@ -1,5 +1,4 @@
 from typing import Union
-
 from fastapi import FastAPI
 from pydantic import BaseModel
 from data_import import import_data, add_book_to_dict
